@@ -1,3 +1,54 @@
+// "use client";
+
+// import { useState } from "react";
+
+// export default function Header() {
+//   const [menuOpen, setMenuOpen] = useState(false);
+
+//   return (
+//     <header className="flex justify-between items-center p-4 bg-black text-white">
+//       {/* Logo */}
+//       <div className="text-lg font-bold">
+//         Papyon<span className="italic text-gray-400">Lab</span>
+//       </div>
+
+//       {/* Hamburger Menu */}
+//       <button
+//         onClick={() => setMenuOpen(!menuOpen)}
+//         className="md:hidden focus:outline-none"
+//         aria-label="Menu"
+//       >
+//         <svg
+//           className="w-6 h-6"
+//           fill="none"
+//           stroke="currentColor"
+//           viewBox="0 0 24 24"
+//           xmlns="http://www.w3.org/2000/svg"
+//         >
+//           <path
+//             strokeLinecap="round"
+//             strokeLinejoin="round"
+//             strokeWidth={2}
+//             d="M4 6h16M4 12h16M4 18h16"
+//           />
+//         </svg>
+//       </button>
+
+//       {/* Menü İçeriği */}
+//       <ul className={`absolute top-16 left-0 w-full bg-black text-white p-4 space-y-4 md:flex md:static md:space-y-0 md:space-x-4 ${menuOpen ? "block" : "hidden"}`}>
+//         <li><a href="#" className="hover:text-gray-400">About Us</a></li>
+//         <li><a href="#" className="hover:text-gray-400">Life at Papyon</a></li>
+//         <li><a href="#" className="hover:text-gray-400">Our Apps</a></li>
+//         <li><a href="#" className="hover:text-gray-400">Insight</a></li>
+//         <li><a href="#" className="hover:text-gray-400">Contact</a></li>
+//       </ul>
+//     </header>
+//   );
+// }
+
+
+
+
 "use client";
 import { useMenu } from "@/context/menuContext";
 import Image from "next/image";
@@ -6,8 +57,8 @@ export default function Header() {
   const { menuOpen, toggleMenu } = useMenu();
 
   return (
-    <header className=" w-full z-10">
-      <nav className="flex items-center justify-between px-[50px] py-[50px]">
+    <header className="w-full absolute top-0">
+      <div className="flex items-center justify-between w-full md:px-[50px] md:py-[50px] px-5 py-5">
        
       <div className="block md:hidden">
             <Image
@@ -56,7 +107,7 @@ export default function Header() {
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
       {menuOpen && (
         <ul className="absolute top-16 left-0 w-full  p-4 space-y-4 md:hidden">
           <li>
