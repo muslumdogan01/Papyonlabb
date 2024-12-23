@@ -1,7 +1,5 @@
 import Header from "@/components/header/page";
-import Boxes from "@/components/hero/card";
 import Cards from "@/components/hero/cards";
-import HeroBg from "@/components/hero/heroBg";
 import IntroText from "@/components/hero/introText";
 import Image from "next/image";
 
