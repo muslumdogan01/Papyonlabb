@@ -1,22 +1,45 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Cards() {
   const [isHoveredBox1, setIsHoveredBox1] = useState(false);
   const [isHoveredBox2, setIsHoveredBox2] = useState(false);
   const [isHoveredBox3, setIsHoveredBox3] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // 768px altı mobil
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize(); // İlk render'da ekran boyutunu kontrol et
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <div className="w-full flex lg:flex-row flex-col justify-center items-center space-x-6 md:mt-[200px]">
+    <div className="w-full flex lg:flex-row flex-col justify-center items-center md:space-x-6 md:mt-[200px] mt-[50px] ">
       <div
-        className="bg-[#1E1E211A] w-[598px] h-[664px] rounded-[40px] p-[50px] flex justify-between flex-col "
-        onMouseEnter={() => setIsHoveredBox1(true)}
-        onMouseLeave={() => setIsHoveredBox1(false)}
+        className="bg-[#1E1E211A] md:w-[598px] md:h-[664px] w-[350px] h-[190px] p-[30px] rounded-[40px] md:p-[50px] flex justify-between flex-col "
+        onMouseEnter={() => !isMobile && setIsHoveredBox1(true)}
+        onMouseLeave={() => !isMobile && setIsHoveredBox1(false)}
       >
         <div className="flex  w-full">
+          <div className="flex w-full justify-end cursor-pointer md:hidden">
+            <Image
+              src="/icons/exportLink.svg"
+              className=""
+              alt="Icon"
+              width={32}
+              height={32}
+            />
+          </div>
           {!isHoveredBox1 ? (
-            <div className="flex  w-full relative">
+            <div className="md:flex hidden w-full relative">
               <Image
                 src="/icons/line3.svg"
                 className="w-[90px] h-[140px] absolute top-0 right-0"
@@ -51,18 +74,27 @@ export default function Cards() {
             </div>
           )}
         </div>
-        <div className="font-normal text-[40px] leading-[52px] text-white ">
+        <div className="font-normal text-[26px] leading-[33px] md:text-[40px] md:leading-[52px] text-white ">
           I m eager to see <br /> your creative work.
         </div>
       </div>
-      <div className="w-[598px] h-[664px] rounded-[40px] flex flex-col justify-center items-center space-y-6">
+      <div className="md:w-[598px] md:h-[664px] rounded-[40px] flex flex-col justify-center items-center  md:space-y-6">
         <div
-          className="w-[598px] bg-[#1E1E211A] flex flex-col justify-between p-[50px] h-[320px] rounded-[40px]"
-          onMouseEnter={() => setIsHoveredBox2(true)}
-          onMouseLeave={() => setIsHoveredBox2(false)}
+          className="md:w-[598px] md:p-[50px] md:h-[320px] w-[350px] h-[190px] p-[30px] my-[10px] md:my-0 bg-[#1E1E211A] flex flex-col justify-between  rounded-[40px]"
+          onMouseEnter={() => !isMobile && setIsHoveredBox2(true)}
+          onMouseLeave={() => !isMobile && setIsHoveredBox2(false)}
         >
+          <div className="flex w-full justify-end cursor-pointer md:hidden">
+            <Image
+              src="/icons/exportLink.svg"
+              className=""
+              alt="Icon"
+              width={32}
+              height={32}
+            />
+          </div>
           {!isHoveredBox2 ? (
-            <div className="flex  w-full">
+            <div className="md:flex hidden w-full">
               <div className="flex  w-full relative">
                 <Image
                   src="/icons/circle4.svg"
@@ -106,17 +138,26 @@ export default function Cards() {
             </div>
           )}
 
-          <div className="font-normal text-[40px] leading-[52px] text-white ">
+          <div className="font-normal text-[26px] leading-[33px] md:text-[40px] md:leading-[52px] text-white ">
             I have an <br /> web/app idea
           </div>
         </div>
         <div
-          className="w-[598px] bg-[#1E1E211A] flex flex-col justify-between p-[50px] h-[320px] rounded-[40px]"
-          onMouseEnter={() => setIsHoveredBox3(true)}
-          onMouseLeave={() => setIsHoveredBox3(false)}
+          className="md:w-[598px] md:p-[50px] md:h-[320px] w-[350px] h-[190px] p-[30px] bg-[#1E1E211A] flex flex-col justify-between  rounded-[40px]"
+          onMouseEnter={() => !isMobile && setIsHoveredBox3(true)}
+          onMouseLeave={() => !isMobile && setIsHoveredBox3(false)}
         >
+          <div className="flex w-full justify-end cursor-pointer md:hidden">
+            <Image
+              src="/icons/exportLink.svg"
+              className=""
+              alt="Icon"
+              width={32}
+              height={32}
+            />
+          </div>
           {!isHoveredBox3 ? (
-            <div className="flex  w-full">
+            <div className="md:flex hidden w-full">
               <div className="flex  w-full relative">
                 <Image
                   src="/icons/secCircle2.svg"
@@ -146,7 +187,7 @@ export default function Cards() {
             </div>
           )}
 
-          <div className="font-normal text-[40px] leading-[52px] text-white ">
+          <div className="font-normal text-[26px] leading-[33px] md:text-[40px] md:leading-[52px] text-white ">
             Software &<br />
             design support
           </div>
