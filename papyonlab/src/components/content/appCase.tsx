@@ -40,8 +40,8 @@ export default function AppCase() {
         <Image
           src={activeAppData.image}
           alt={activeAppData.name}
-          width={300}
-          height={500}
+          width={400}
+          height={700}
           className="transition-opacity duration-300 rounded-lg"
         />
       </div>
