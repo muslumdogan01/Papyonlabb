@@ -1,4 +1,5 @@
 import AppCase from "@/components/content/appCase";
+import LoveUsers from "@/components/content/loveUsers";
 import OurTeam from "@/components/content/ourTeam";
 import Header from "@/components/header/page";
 import Cards from "@/components/hero/cards";
@@ -9,16 +10,16 @@ export default function Home() {
   return (
     <>
       <div className="w-full md:h-screen aspect-[16/9] relative ">
-        <HeroBg/>
+        <HeroBg />
         <Header />
         <Cards />
         <IntroText />
         <AppCase />
         <OurTeam />
-        <IntroText />
-        <IntroText />
+        <div className="container mx-auto">
+          <LoveUsers />
+        </div>
       </div>
-      
     </>
   );
 }
