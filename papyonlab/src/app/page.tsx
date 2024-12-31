@@ -16,7 +16,7 @@ export default function Home() {
         <IntroText />
         <AppCase />
         <OurTeam />
-        <div className="container mx-auto">
+        <div className="2xl:container 2xl:mx-auto">
           <LoveUsers />
         </div>
       </div>

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 
 const HorizontalScroll = () => {
   const [scrollY, setScrollY] = useState(0); // Scroll pozisyonu
-  const [translateX, setTranslateX] = useState(800); // Slider'ın yatay pozisyonu
+  const [translateX, setTranslateX] = useState(500); // Slider'ın yatay pozisyonu
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +28,7 @@ const HorizontalScroll = () => {
   }, [scrollY]);
 
   return (
-    <div className="container mx-auto mt-[250px]">
+    <div className=" mt-[250px]">
       <div className=" flex relative overflow-hidden ">
         {/* Slider */}
         <div
