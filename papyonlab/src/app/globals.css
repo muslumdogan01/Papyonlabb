@@ -2,31 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
-    font-family: "Geist";
-    src: url("/fonts/Geist-Regular.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Geist";
-    src: url("/fonts/Geist-Bold.woff2") format("woff2");
-    font-weight: bold;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: "Geist";
-    src: url("/fonts/Geist-Italic.woff2") format("woff2");
-    font-weight: normal;
-    font-style: italic;
-  }
-  
+  font-family: "Geist";
+  src: url("/fonts/Geist-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+}
 
-  html, body {
- 
-background-color: black ;
-  
-  }
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/Geist-Italic.woff2") format("woff2");
+  font-weight: normal;
+  font-style: italic;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color:#151518;
+}

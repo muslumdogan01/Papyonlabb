@@ -49,7 +49,7 @@ const LovedByUsers = () => {
           Our apps are loved globally, allowing us to make an impact. We started
           as a startup, but aim to grow beyond limits.
         </h5>
-        <div className="mt-6 flex justify-center items-center bg-[#1E1E21] text-white rounded-lg p-6 space-x-8">
+        <div className="mt-6 flex justify-center items-center relative z-30 bg-[#1E1E21] text-white rounded-lg p-6 space-x-8">
           <div className="text-center">
             <p className="text-3xl font-bold">15</p>
             <p className="text-sm">Apps</p>
