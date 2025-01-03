@@ -24,7 +24,7 @@ export default function Cards() {
   return (
     <div className="w-full flex lg:flex-row flex-col justify-center items-center md:space-x-6 md:mt-[200px] mt-[50px] ">
       <div
-        className="bg-[#1E1E211A] md:w-[598px] md:h-[664px] w-[350px] h-[190px] p-[30px] rounded-[40px] md:p-[50px] flex justify-between flex-col "
+        className="bg-[#1E1E21] md:w-[598px] md:h-[664px] w-[350px] h-[190px] p-[30px] rounded-[40px] md:p-[50px] flex justify-between flex-col "
         onMouseEnter={() => !isMobile && setIsHoveredBox1(true)}
         onMouseLeave={() => !isMobile && setIsHoveredBox1(false)}
       >
@@ -80,7 +80,7 @@ export default function Cards() {
       </div>
       <div className="md:w-[598px] md:h-[664px] rounded-[40px] flex flex-col justify-center items-center  md:space-y-6">
         <div
-          className="md:w-[598px] md:p-[50px] md:h-[320px] w-[350px] h-[190px] p-[30px] my-[10px] md:my-0 bg-[#1E1E211A] flex flex-col justify-between  rounded-[40px]"
+          className="md:w-[598px] md:p-[50px] md:h-[320px] w-[350px] h-[190px] p-[30px] my-[10px] md:my-0 bg-[#1E1E21] flex flex-col justify-between  rounded-[40px]"
           onMouseEnter={() => !isMobile && setIsHoveredBox2(true)}
           onMouseLeave={() => !isMobile && setIsHoveredBox2(false)}
         >
@@ -143,7 +143,7 @@ export default function Cards() {
           </div>
         </div>
         <div
-          className="md:w-[598px] md:p-[50px] md:h-[320px] w-[350px] h-[190px] p-[30px] bg-[#1E1E211A] flex flex-col justify-between  rounded-[40px]"
+          className="md:w-[598px] md:p-[50px] md:h-[320px] w-[350px] h-[190px] p-[30px] bg-[#1E1E21] flex flex-col justify-between  rounded-[40px]"
           onMouseEnter={() => !isMobile && setIsHoveredBox3(true)}
           onMouseLeave={() => !isMobile && setIsHoveredBox3(false)}
         >

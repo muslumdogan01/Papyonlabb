@@ -9,7 +9,7 @@ import IntroText from "@/components/hero/introText";
 export default function Home() {
   return (
     <>
-      <div className="w-full md:h-screen aspect-[16/9] relative ">
+      <div className="relative  w-full  z-50  bg-[#151518] ">
         <HeroBg />
         <Header />
         <Cards />

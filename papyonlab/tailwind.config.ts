@@ -10,21 +10,26 @@ export default {
     extend: {
       keyframes: {
         floating: {
-          '0%, 100%': { transform: 'translateY(0)' },
-          '50%': { transform: 'translateY(-10px)' },
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-10px)" },
+        },
+        bounceSlow: {
+          "0%, 100%": { transform: "translateY(4px)" },
+          "50%": { transform: "translateY(-4px)" },
         },
       },
       animation: {
-        floating: 'floating 4s ease-in-out infinite',
+        floating: "floating 4s ease-in-out infinite",
+
+        "bounce-slow": "bounceSlow 1.5s ease-in-out infinite", // Yavaş hareket
       },
+
       colors: {
-        'white-opacity': 'rgba(255, 255, 255, 0.04)', // #FFFFFF0A (4% opacity)
+        "white-opacity": "rgba(255, 255, 255, 0.04)", // #FFFFFF0A (4% opacity)
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-      backgroundImage: {
-        'custom-gradient': 'linear-gradient(0deg, #FFFFFF 100%, #151518 100%)',
-      },
+
       fontFamily: {
         geist: ["Geist", "sans-serif"],
       },
