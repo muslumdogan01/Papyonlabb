@@ -53,8 +53,8 @@ const Footer = () => {
       </div>
       <div className="w-full mt-[100px]">
         <Image
-          src="/papyon.png"
-          alt="Papyon Logo"
+          src="/lab.png"
+          alt="PapyonLogo"
           layout="responsive"
           width={1920}
           height={272}
