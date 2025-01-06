@@ -15,7 +15,7 @@ export default function AppCase() {
     { id: "roosefy", name: "roosefy", image: "/appCase/discover.png" },
     { id: "essaymate", name: "essaymate", image: "/appCase/easymate.png" },
     { id: "invoicer", name: "invoicer", image: "/appCase/invoicer.png" },
-    { id: "sayai", name: "say ai", image: "/appCase/sayai.png" },
+    { id: "sayai", name: "say ai", image: "/appCase/alex.png" },
     { id: "lenzai", name: "lenz ai", image: "/appCase/lenz.png" },
     { id: "magicly", name: "magicly", image: "/appCase/templates.png" },
     { id: "pure", name: "pure", image: "/appCase/contacts.png" },

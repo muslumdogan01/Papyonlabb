@@ -1,6 +1,7 @@
 import AppCase from "@/components/content/appCase";
 import LoveUsers from "@/components/content/loveUsers";
 import OurTeam from "@/components/content/ourTeam";
+import Footer from "@/components/footer/page";
 import Header from "@/components/header/page";
 import Cards from "@/components/hero/cards";
 import HeroBg from "@/components/hero/heroBg";
@@ -20,6 +21,7 @@ export default function Home() {
           <LoveUsers />
         </div>
       </div>
+      <Footer />
     </>
   );
 }

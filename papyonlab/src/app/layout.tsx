@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { MenuProvider } from "@/context/menuContext";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import 'locomotive-scroll/dist/locomotive-scroll.css';
+import './globals.css';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
