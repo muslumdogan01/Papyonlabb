@@ -9,8 +9,8 @@ import IntroText from "@/components/hero/introText";
 
 export default function Home() {
   return (
-    <>
-      <div className="relative  w-full  z-50 rounded-b-[60px] bg-[#151518] ">
+    <div className="absolute top-0 left-0 w-full bg-[#0000FF] ">
+      <div className=" w-full relative z-50 rounded-b-[60px] bg-[#151518] ">
         <HeroBg />
         <Header />
         <Cards />
@@ -22,6 +22,6 @@ export default function Home() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }

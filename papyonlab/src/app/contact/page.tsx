@@ -44,10 +44,10 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="flex justify-center items-center min-h-screen ">
+    <div className="flex justify-center items-center w-full h-screen bg-[#151518] ">
       <form
         onSubmit={handleSubmit}
-        className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-lg"
+        className="bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-lg "
       >
         <h2 className="text-2xl font-bold mb-4 text-white">Get in Touch</h2>
 
