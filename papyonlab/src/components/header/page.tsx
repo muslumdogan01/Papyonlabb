@@ -54,7 +54,8 @@ export default function Header() {
   const { menuOpen, toggleMenu } = useMenu();
 
   return (
-    <header className="w-full absolute top-0 ">
+    <header className="w-full absolute top-0 bg-[#1E1E211A] backdrop-blur-sm">
+
       <div className=" container mx-auto">
         <div className="flex items-center justify-between w-full md:px-[50px] md:py-[50px] px-5 py-5">
           <div className="block md:hidden">

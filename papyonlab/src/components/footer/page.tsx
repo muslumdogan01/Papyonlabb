@@ -1,7 +1,14 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const Footer = () => {
+  const router = useRouter();
+
+  const goToAboutPage = () => {
+    router.push("/contact");
+  };
   return (
     <div className="w-full ">
       <div className="container mx-auto">
@@ -11,39 +18,39 @@ const Footer = () => {
           </p>
         </div>
         <div className="flex justify-center items-center w-full mt-[10px]">
-          <h1 className="text-[60px] font-[500] leading-[60px] text-white text-center">
-            Lets talk about your app!
+          <h1 className="text-[60px] font-[500] leading-[60px] text-white text-center ">
+            <button className="hover:underline cursor-pointer" onClick={goToAboutPage}>Lets talk about your app!</button>
           </h1>
         </div>
         <div className="flex-grow h-px bg-white opacity-40 mt-[110px]"></div>
         <div className="w-full flex justify-between items-center mt-[20px]">
           <div className=" w-full flex items-center">
             <ul className="flex space-x-[50px] text-[16px] font-[400] leading-[34px] text-white">
-            <li>
-              <a href="#" className="hover:text-gray-400 leading-8 ">
-                about us
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400 leading-8 ">
-                life at papyon
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400 leading-8 ">
-                our apps
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400 leading-8 ">
-                insight
-              </a>
-            </li>
-            <li>
-              <a href="#" className="hover:text-gray-400 leading-8 ">
-                contact
-              </a>
-            </li>
+              <li>
+                <a href="#" className="hover:text-gray-400 leading-8 ">
+                  about us
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-400 leading-8 ">
+                  life at papyon
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-400 leading-8 ">
+                  our apps
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-400 leading-8 ">
+                  insight
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-400 leading-8 ">
+                  contact
+                </a>
+              </li>
             </ul>
           </div>
           <div className="flex  text-[16px] w-full items-center justify-end font-[500] leading-[34px] text-white">
@@ -59,7 +66,6 @@ const Footer = () => {
           width={1920}
           height={272}
         />
-       
       </div>
     </div>
   );

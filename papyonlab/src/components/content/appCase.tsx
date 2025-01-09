@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Image from "next/image";
 
-// App türünü tanımlıyoruz
+
 type App = {
   id: string;
   name: string;
@@ -10,7 +10,7 @@ type App = {
 };
 
 export default function AppCase() {
-  // Uygulama verilerini tanımlıyoruz
+
   const apps: App[] = [
     { id: "roosefy", name: "roosefy", image: "/appCase/discover.png" },
     { id: "essaymate", name: "essaymate", image: "/appCase/easymate.png" },
@@ -26,19 +26,19 @@ export default function AppCase() {
   // Aktif hover edilen uygulamanın id'sini saklıyoruz
   const [activeApp, setActiveApp] = useState<string | null>(null);
 
-  // Default olarak gösterilecek uygulama (roosefy)
+
   const defaultApp = apps[0];
 
-  // Aktif uygulamayı buluyoruz, yoksa default uygulamayı kullanıyoruz
+
   const activeAppData = apps.find((app) => app.id === activeApp) || defaultApp;
 
   return (
     <div className="container mx-auto">
       
       <div className="md:flex hidden justify-center items-center space-x-[129px] mt-[218px]">
-        {/* Sol Resim Alanı */}
+  
         <div className="relative  rounded-lg flex items-center justify-center">
-          {/* Hareket Eden Arka Plan */}
+    
           <div
             className="absolute  w-[340px] h-[600px] bg-gradient-to-r from-[rgba(243,72,112,1)] to-[rgba(243,134,80,1)] rounded-[10000px] 
                         animate-bounce-slow transition-all duration-500"
@@ -47,7 +47,7 @@ export default function AppCase() {
             }}
           ></div>
 
-          {/* Image */}
+   
           <Image
             src={activeAppData.image}
             alt={activeAppData.name}
@@ -57,7 +57,7 @@ export default function AppCase() {
           />
         </div>
 
-        {/* Sağ Uygulama İsimleri */}
+
         <ul className="space-y-4">
           {apps.map((app) => (
             <li

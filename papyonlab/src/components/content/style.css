@@ -1,0 +1,38 @@
+section {
+    margin-top: 250px;
+    position: relative;
+  }
+  
+
+  
+  .progress {
+    position: fixed;
+
+    right: 0;
+    height: 5px;
+
+  }
+  
+  .parallax {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: flex-end !important;
+  }
+  
+  .parallax .scroller {
+ 
+    text-transform: uppercase;
+
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+  
+  .parallax span {
+    display: block;
+    margin-right: 30px;
+  }
+  

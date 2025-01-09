@@ -10,7 +10,7 @@ import IntroText from "@/components/hero/introText";
 export default function Home() {
   return (
     <>
-      <div className="relative  w-full  z-50  bg-[#151518] ">
+      <div className="relative  w-full  z-50 rounded-b-[60px] bg-[#151518] ">
         <HeroBg />
         <Header />
         <Cards />

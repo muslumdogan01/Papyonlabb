@@ -3,17 +3,17 @@ import React from "react";
 
 const HeroBg = () => {
   return (
-    <div className="md:h-screen aspect-[16/9] w-full relative">
+    <div className="md:h-screen aspect-[16/9] w-full relative ">
       <div className="relative w-full h-full ">
         <div
-          className="absolute top-0 h-full w-full bg-cover bg-center "
+          className="absolute top-0 h-full w-full bg-cover bg-center  "
           style={{
             backgroundImage:
-              "linear-gradient(to bottom, #151518, transparent, #151518), linear-gradient(to right, #151518, transparent, #151518), url('/hero.png')",
+              "linear-gradient(to bottom, #151518, transparent, #151518), linear-gradient(to right, #151518, transparent, #151518), url('/bg.png')",
             backgroundColor: "#151518",
           }}
         >
-          <div className="  text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-0 px-4 flex flex-col items-center w-full">
+          <div className="  text-center absolute top-2/4 left-1/2 transform -translate-x-1/2 2xl:translate-y-1/4 px-4 flex flex-col items-center w-full">
             <div className="space-x-1 justify-center items-center text-[20px] leading-[28px] font-normal text-white font-geist md:flex hidden relative">
               <span> Our</span>
               <span>
